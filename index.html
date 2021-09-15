@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="head">
+            <img src="imgs/bank.png" alt="" id="bank">
+            <p id="title">SISTEMA DE LIQUIDACIÓN</p>
+        </div>
+        <div id="left">
+            <p>Bienvenido al sistema de liquidación. Por favor ingresa los siguientes datos:</p>
+            <form action="#" id="prestaciones">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Nombre </span>
+                        <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Identificación </span>
+                        <input type="text" id="cc" placeholder="Ingresa tu cédula">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Salario </span>
+                        <input type="text" id="salario" placeholder="Ingresa tu salario">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Fecha de inicio </span>
+                        <input type="date" id="date1">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Fecha de finalización </span>
+                        <input type="date" id="date2">
+                    </div>     
+                </div>           
+            </form>
+        </div>
+        <div id="right">
+            <p id="mensajeInicial">Completa el formulario para conocer el valor de tu liquidación.</p><br>
+            <img src="imgs/3044640-200.png" alt="" id="pending">
+            <p id="valPrestaciones"></p><br>
+            <p id="valSeguridad"></p><br>
+            <p id="valNomina"></p><br>
+            <p id="valParaf"></p><br>
+            <p id="valTotal"></p>
+        </div>
+        <div id="foot">
+            <input type="submit" id="calcular" form="prestaciones" value="Calcular prestaciones" onclick="actualizarPagina()">
+        </div>
+    </div>
+    <script src="app/main.js"></script>
+</body>
+</html>
